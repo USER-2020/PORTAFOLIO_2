@@ -1,29 +1,29 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import { GiAstronautHelmet, GiCandleFlame } from "react-icons/gi";
+import { GiAstronautHelmet } from "react-icons/gi";
 
 const Header = () => {
     const [bar, setBar] = useState(false);
-  return (
-    <Container bar={bar}>
-        <Logo>
-            <span className='green'><GiAstronautHelmet/></span>
-            <h1>Portafolio</h1>
-        </Logo>
-        <Nav bar={bar}>
-            <span><a href="#home">Inicio</a></span>
-            <span><a href="#service">Servicios</a></span>
-            <span><a href="#project">Proyectos</a></span>
-            <span><a href="#client">Tecnologías</a></span>
-            <span><a href="#footer">Portafolio</a></span>
-        </Nav>
-        <div
-        onClick={() => setBar(!bar)}
-        className="bars">
-            <div className="bar"></div>
-        </div>
-    </Container>
-  )
+    return (
+        <Container bar={bar}>
+            <Logo>
+                <span className='green'><GiAstronautHelmet /></span>
+                <h1>Portafolio</h1>
+            </Logo>
+            <Nav bar={bar}>
+                <span><a href="#home">Inicio</a></span>
+                <span><a href="#service">Servicios</a></span>
+                <span><a href="#project">Proyectos</a></span>
+                <span><a href="#client">Tecnologías</a></span>
+                <span><a href="#footer">Portafolio</a></span>
+            </Nav>
+            <div
+                onClick={() => setBar(!bar)}
+                className="bars">
+                <div className="bar"></div>
+            </div>
+        </Container>
+    )
 }
 
 export default Header

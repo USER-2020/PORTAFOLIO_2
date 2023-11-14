@@ -1,14 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { AiFillFacebook, AiOutlineGithub, AiOutlineInstagram } from "react-icons/ai";
-import { GiEarthAmerica } from "react-icons/gi";
-import { FaLinkedinIn } from "react-icons/fa";
+import { AiOutlineGithub, AiOutlineInstagram } from "react-icons/ai";
 import { Slide } from "react-awesome-reveal";
 import imgSelf from '../../assets/img/imag_portafolio_juan.png';
 
 const ProfComponent = () => {
 
-  const sendByChat = (event) =>{
+  const sendByChat = (event) => {
     event.preventDefault();
     window.open("https://wa.link/xb51vd");
   }
@@ -35,7 +33,7 @@ const ProfComponent = () => {
               </span>
               <span>
                 <a href="https://github.com/USER-2020">
-                  <AiOutlineGithub/>
+                  <AiOutlineGithub />
                 </a>
               </span>
               {/* <span>

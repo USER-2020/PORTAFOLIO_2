@@ -1,5 +1,5 @@
 import React from 'react';
-import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import javaImg from '../../assets/img/java.png';
 import angularImg from '../../assets/img/angular.png';
@@ -98,7 +98,7 @@ const options = {
 
 const Tecnolgies = () => {
 
-    const imgs = ''
+
 
     return (
         <div id='client'>
